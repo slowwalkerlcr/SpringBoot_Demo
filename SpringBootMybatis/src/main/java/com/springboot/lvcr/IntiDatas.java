@@ -15,12 +15,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableAutoConfiguration
 @ComponentScan
 // 指定扫描的mapper接口所在的包
-@MapperScan("com.springboot.mapper")
+@MapperScan("com.springboot.lvcr.mapper")
 // 启动注解事务管理
 @EnableTransactionManagement
 @Component
 public class IntiDatas {
-	private static final String TYPE_ALIASES_PACKAGE = "com.springboot.model";
+	private static final String TYPE_ALIASES_PACKAGE = "com.springboot.lvcr.model";
 	private static final String MAPPER_LOCATION = "classpath:/mybatis/*.xml";
 
 	@Bean

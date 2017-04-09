@@ -1,4 +1,4 @@
-package com.springboot.service;
+package com.springboot.lvcr.service;
 
 import java.util.List;
 

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.github.pagehelper.PageHelper;
 import com.springboot.lvcr.model.Message;
-import com.springboot.service.IMessageService;
+import com.springboot.lvcr.service.IMessageService;
 
 public class HelloController {
 	@Resource
