@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.github.pagehelper.PageHelper;
 import com.springboot.lvcr.model.Message;
 import com.springboot.lvcr.service.IMessageService;
-
+@Controller
 public class HelloController {
 	@Resource
 	private IMessageService messageService;
