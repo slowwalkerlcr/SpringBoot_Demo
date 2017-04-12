@@ -1,16 +1,16 @@
 package com.springboot.lvcr.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController
+@Controller
 public class HelloWorldController {
 	
-	@RequestMapping("/hello")
+	@RequestMapping("/hello.action")
 	public String hello(){
 		
-		return "Hello Spring Boot";
+		return "hello world";
 	}
 
 }

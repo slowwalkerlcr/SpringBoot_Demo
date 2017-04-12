@@ -32,6 +32,8 @@ public class TestFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
 
+		request.getServletContext();
+		
 		HttpServletRequest hreq = (HttpServletRequest) request;  
         String url = hreq.getServletPath();
         System.out.println("url:======>"+url);

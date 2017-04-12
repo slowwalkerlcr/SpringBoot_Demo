@@ -19,12 +19,12 @@ public class PersonServiceController {
 	// 自动注入PersonService
 	private PersonService personService;
 
-	@GetMapping("get/name")
+	@GetMapping("getName")
 	public String getPersonName() {
 		return personService.getPersonName();// 调用PersonService服务的方法
 	}
 
-	@GetMapping("get/sex")
+	@GetMapping("getSex")
 	public String getPersonSex() {
 		return personService.getPersonSex();
 	}

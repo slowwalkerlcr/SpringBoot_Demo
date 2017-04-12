@@ -21,7 +21,7 @@ public class Webconfig {
 		FilterRegistrationBean registration = new FilterRegistrationBean();
 		registration.setFilter(new TestFilter());
 		registration.setAsyncSupported(true);
-		registration.addUrlPatterns("/*");
+		registration.addUrlPatterns("*.action");
 		return registration;
 	}
 

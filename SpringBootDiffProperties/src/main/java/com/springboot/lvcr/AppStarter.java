@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ImportResource;
  * @version
  */
 @SpringBootApplication
-@ImportResource("applicationContext.xml")
+@ImportResource("applicationContext.xml") //指定需要加载的配置文件
 public class AppStarter {
 
 	public static void main(String[] args) {
