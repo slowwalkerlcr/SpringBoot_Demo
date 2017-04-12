@@ -24,7 +24,7 @@
 
 
 	<dependencies>
-		<!-- 核心模块，包括自动配置支持、日志和YAML -->
+		<!-- 核心模块，包括自动配置支持-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
