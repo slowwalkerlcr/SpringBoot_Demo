@@ -19,19 +19,20 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AppStarter {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AppStarter.class, args);
-		
-		/*Properties properties = new Properties();
-		InputStream in = AppStarter.class.getClassLoader().getResourceAsStream("application.properties");
+		// SpringApplication.run(AppStarter.class, args);
+
+		Properties properties = new Properties();
+		InputStream in = AppStarter.class.getClassLoader().getResourceAsStream(
+				"application.yml");
 		try {
 			properties.load(in);
 		} catch (IOException e) {
-			e.printStackTrace();  
-			
+			e.printStackTrace();
+
 		}
 		SpringApplication app = new SpringApplication(AppStarter.class);
 		app.setDefaultProperties(properties);
-		app.run(args);*/
-		
+		app.run(args);
+
 	}
 }

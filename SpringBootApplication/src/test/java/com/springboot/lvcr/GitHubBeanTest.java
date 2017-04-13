@@ -1,5 +1,7 @@
 package com.springboot.lvcr;
 
+import java.util.List;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +31,10 @@ public class GitHubBeanTest {
 		System.out.println("url:"+gitHubBean.getUrl());
 		System.out.println("username:"+gitHubBean.getUsername());
 		System.out.println("password:"+gitHubBean.getPassword());
+		List<String> strs = gitHubBean.getProject();
+		for(String str:strs){
+			System.out.println(str);
+		}
 
 	}
 }

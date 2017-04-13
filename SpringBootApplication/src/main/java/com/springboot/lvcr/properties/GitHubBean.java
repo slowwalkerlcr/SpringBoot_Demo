@@ -1,5 +1,8 @@
 package com.springboot.lvcr.properties;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -13,6 +16,8 @@ public class GitHubBean {
 	private String username;
 	
 	private String password;
+	
+	private List<String> project = new ArrayList<String>();
 
 	public String getUrl() {
 		return url;
@@ -36,6 +41,14 @@ public class GitHubBean {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public List<String> getProject() {
+		return project;
+	}
+
+	public void setProject(List<String> project) {
+		this.project = project;
 	}
 	
 	
