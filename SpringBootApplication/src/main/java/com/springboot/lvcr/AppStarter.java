@@ -1,9 +1,5 @@
 package com.springboot.lvcr;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -16,12 +12,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version
  */
 @SpringBootApplication
+//@PropertySource("application.yml")
 public class AppStarter {
 
 	public static void main(String[] args) {
-		// SpringApplication.run(AppStarter.class, args);
+		 SpringApplication.run(AppStarter.class, args);
 
-		Properties properties = new Properties();
+		/*Properties properties = new Properties();
 		InputStream in = AppStarter.class.getClassLoader().getResourceAsStream(
 				"application.yml");
 		try {
@@ -33,6 +30,6 @@ public class AppStarter {
 		SpringApplication app = new SpringApplication(AppStarter.class);
 		app.setDefaultProperties(properties);
 		app.run(args);
-
+*/
 	}
 }

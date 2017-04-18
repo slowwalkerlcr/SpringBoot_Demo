@@ -19,7 +19,8 @@ import org.springframework.context.annotation.Configuration;
 // 开启指定类的配置
 @EnableConfigurationProperties(PersonServiceProperties.class)  
 // 当PersonService这个类在类路径中时，且当前容器中没有这个Bean的情况下，开始自动配置
-//@ConditionalOnClass(PersonService.class)
+//该注解的参数对应的类必须存在，否则不解析该注解修饰的配置类；
+@ConditionalOnClass(PersonService.class)
 // 指定的属性是否有指定的值
 //@ConditionalOnProperty(prefix = "person.proterties.set", value = "enabled", matchIfMissing = true)
 public class PersonServiceAutoConfiguration {
