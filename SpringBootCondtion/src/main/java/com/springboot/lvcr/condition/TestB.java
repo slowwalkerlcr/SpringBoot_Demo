@@ -2,6 +2,7 @@
   
 package com.springboot.lvcr.condition;  
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
 /**  
@@ -12,6 +13,8 @@ import org.springframework.stereotype.Component;
  * @version            
  */
 @Component
+//@ConditionalOnProperty(prefix = "user.name", value = "enabled", matchIfMissing = true)
+@ConditionalOnProperty(prefix = "user",value = "namessss")
 public class TestB {
 	
 	public TestB(){
