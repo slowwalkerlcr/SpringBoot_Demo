@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
@@ -14,16 +15,10 @@ import org.springframework.stereotype.Component;
  * @author Edison_lv
  * @version
  */
-@Component
-// classpath目录下有TestB，才去装配TestA
-@ConditionalOnClass(TestB.class)
-// 当容器中存在TestB，才去装配TestA
-@ConditionalOnBean(TestB.class)
 public class TestA {
 
-	@Autowired
-	private TestB testB;
-
+	
+	
 	public TestA() {
 		System.out.println("=====================new  TestA");
 	}
